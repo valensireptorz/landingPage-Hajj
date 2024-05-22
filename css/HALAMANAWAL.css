@@ -1,0 +1,532 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.ornaments__image--left {
+  height: 76px;
+  width: 75px;
+  object-fit: cover;
+}
+
+.section__stack-row-column-text {
+  color: var(--gray_300) !important;
+}
+
+.section__stack-row-column-row-image--left {
+  height: 22px;
+  width: 22px;
+  object-fit: cover;
+}
+
+/* Responsiveness for image */
+@media only screen and (max-width: 480px) {
+  .section__stack-row-column-row-image--left {
+    height: auto; /* Ubah ketinggian ke 'auto' untuk mengikuti lebar gambar secara proporsional */
+    width: 100%; /* Lebarkan gambar agar sesuai dengan lebar parent element */
+    object-fit: contain; /* Menjaga aspek gambar agar tidak terdistorsi */
+  }
+}
+
+
+.section__ornament-image {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+}
+
+.section__stack-row-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-container__title {
+  color: var(--black_900) !important;
+}
+
+/*-------------------------------------
+  2. Page CSS
+--------------------------------------*/
+.class-1-halaman-awal {
+  margin-top: 27px;
+  padding-top: 23px;
+  background-color: var(--white_A700);
+  width: 100%;
+  @media only screen and (max-width: 550px) {
+    padding-top: 20px;
+  }
+}
+
+.rowilustrasivek {
+  height: 838px;
+  padding-bottom: 93px;
+  background-image: url(../public/images/img_group_2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Gambar akan diatur berdasarkan lebar dan tetap berpusat vertikal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 1050px) {
+    height: auto;
+    padding-bottom: 20px;
+    background-size: contain; /* Saat ukuran layar berubah, gambar akan menyesuaikan untuk tetap terlihat utuh */
+  }
+}
+
+
+.intro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1065px;
+  margin-left: auto;
+  margin-right: auto;
+  @media only screen and (max-width: 1050px) {
+    padding: 20px;
+  }
+}
+
+.intro__content {
+  gap: 44px;
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  align-self: stretch;
+}
+
+.header__stack {
+  height: 90px;
+  position: relative;
+}
+
+.header__top-row {
+  background-color: var(--cyan_300);
+  box-shadow: var(--shadow-xs);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  left: 0px;
+  gap: 20px;
+  padding: 15px 69px 14px 149px;
+  margin: auto;
+  border-radius: var(--radius-md);
+  @media only screen and (max-width: 1050px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+    position: relative;
+  }
+}
+
+.header__title {
+  font-family: Poppins !important;
+  align-self: end;
+}
+
+.header__menu {
+  gap: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__illustration {
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+  position: absolute;
+  left: 5%;
+  bottom: 0px;
+  top: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.intro__ornaments {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.ornaments__row {
+  width: 86%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.intro__haji-info {
+  margin-top: -72px;
+  align-self: stretch;
+  position: relative;
+  @media screen and (max-width:500px) {
+    width: 100%;
+    height: -200vh;
+  }
+}
+
+.haji-info__text-container {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width:500px) {
+  .haji-info__text-container{
+color: black;
+  }
+}
+
+.text-container__subtitle {
+  color: var(--light_blue_900) !important;
+  margin-top: -30px;
+  position: relative;
+}
+
+.haji-info__stack {
+  height: 98px;
+  margin-top: -21px;
+  position: relative;
+  align-self: stretch;
+  @media only screen and (max-width: 1050px) {
+    height: auto;
+  }
+}
+
+.stack__image {
+  height: 98px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.stack__caption {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  top: 0px;
+  height: max-content;
+  width: max-content;
+  margin: auto;
+}
+
+.intro__heading {
+  color: var(--cyan_300) !important;
+  margin-top: 168px;
+  text-align: center;
+  width: 30%;
+  line-height: 25px;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.intro__description {
+  margin-top: 21px;
+  font-family: Poppins !important;
+  text-align: center;
+  width: 41%;
+  line-height: 22px;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.intro__button {
+  margin-top: 27px;
+  font-weight: 600;
+  border-width: 1px;
+  min-width: 177px;
+}
+
+.class-2halamanabout {
+  height: 832px;
+  background-color: var(--white_A700);
+  background-image: url(../public/images/img_2_halaman_about.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 56px 224px 56px;
+
+  @media only screen and (max-width: 1050px) {
+    height: auto;
+    padding: 20px;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  max-width: 1079px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+  }
+}
+
+.section__stack {
+  height: 157px;
+  width: 36%;
+  position: relative;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.section__stack-image {
+  height: 157px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section__stack-row {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  top: 0px;
+  height: max-content;
+  width: max-content;
+  margin: auto;
+}
+
+.section__stack-row-column-row {
+  gap: 11px;
+  align-self: start;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section__column {
+  margin-top: 128px;
+  gap: 95px;
+  display: flex;
+  width: 44%;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+    gap: 71px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    gap: 47px;
+  }
+}
+
+.section__column-text--title {
+  color: var(--gray_300) !important;
+  text-align: center;
+  width: 72%;
+  line-height: 67px;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.section__column-text--description {
+  font-family: Poppins !important;
+  text-align: center;
+  width: 100%;
+  line-height: 30px;
+  margin-left: 40px;
+}
+
+.class-3halamanunduh {
+  height: 832px;
+  background-color: var(--white_A700);
+  background-image: url(../public/images/img_3_halaman_unduh.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 152px 56px 18px 56px;
+
+  @media only screen and (max-width: 1050px) {
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+
+.section-1 {
+  width: 100%;
+  display: flex;
+  max-width: 1136px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section__column-1 {
+  gap: 183px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: end;
+  @media only screen and (max-width: 1050px) {
+    gap: 137px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    gap: 91px;
+  }
+}
+
+.section__main-column {
+  gap: 33px;
+  display: flex;
+  width: 49%;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.section__ornament-column {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.section__ornament-row {
+  width: 73%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.section__text-row {
+  margin-top: -58px;
+  align-self: stretch;
+  position: relative;
+}
+
+.section__text-column {
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__subtitle {
+  color: var(--light_blue_900) !important;
+  margin-top: -12px;
+  position: relative;
+}
+
+.section__stack-1 {
+  height: 69px;
+  align-self: stretch;
+  position: relative;
+  @media only screen and (max-width: 1050px) {
+    height: auto;
+  }
+}
+
+.section__stack-image-1 {
+  height: 69px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section__stack-text {
+  letter-spacing: 3.6px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  top: 0px;
+  height: max-content;
+  width: max-content;
+  margin: auto;
+}
+
+.section__description {
+  color: var(--black_900) !important;
+  text-align: center;
+  width: 100%;
+  line-height: 30px;
+}
+
+.section__action-row {
+  margin-right: 9px;
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  @media only screen and (max-width: 1050px) {
+    margin-right: 0px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+  }
+}
+
+.section__highlight-text {
+  width: 20%;
+  line-height: 18px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+
+  @media only screen and (max-width: 550px) {
+    width: 100%;
+  }
+}
+
+.section__download-button {
+  font-weight: 700;
+  border-width: 2px;
+  min-width: 264px;
+  border-radius: var(--radius-sm);
+}

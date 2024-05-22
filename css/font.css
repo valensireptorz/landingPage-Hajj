@@ -1,0 +1,49 @@
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/PoppinsBold.ttf");
+    font-family: "Poppins";
+    font-weight: 700;
+  }
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/MuktaBold.ttf");
+    font-family: "Mukta";
+    font-weight: 700;
+  }
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/CinzelRomanBold.ttf");
+    font-family: "Cinzel";
+    font-weight: 700;
+  }
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/CinzelBlack.ttf");
+    font-family: "Cinzel";
+    font-weight: 900;
+  }
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/MuktaSemiBold.ttf");
+    font-family: "Mukta";
+    font-weight: 600;
+  }
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/CinzelBold.ttf");
+    font-family: "Cinzel";
+    font-weight: 700;
+  }
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/PoppinsMedium.ttf");
+    font-family: "Poppins";
+    font-weight: 500;
+  }

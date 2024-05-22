@@ -1,0 +1,175 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Button CSS
+2. Text CSS
+3. Heading CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Button CSS
+--------------------------------------*/
+.ui.button.round {
+  border-radius: var(--radius-xs);
+}
+
+.ui.button.size-xs {
+  height: 41px;
+  padding-left: 34px;
+  padding-right: 28px;
+  font-size: 20px;
+}
+
+.ui.button.size-sm {
+  height: 47px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 24px;
+}
+
+.ui.button.fill.cyan_300 {
+  background-color: var(--cyan_300);
+  box-shadow: var(--shadow-xs);
+  color: var(--light_blue_900);
+}
+
+.ui.button.fill.blue_gray_100_0c {
+  background-color: var(--blue_gray_100_0c);
+  box-shadow: var(--shadow-xs);
+  color: var(--cyan_300);
+}
+
+.ui.button {
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: Mukta;
+  border-color: var(--cyan_300);
+  border-style: solid;
+  box-shadow: var(--shadow-xs);
+}
+
+/*-------------------------------------
+  2. Text CSS
+--------------------------------------*/
+.ui.text.size-xs {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  color: aliceblue;
+  @media screen and(max-width:500px) {
+   color: black;
+   margin-bottom: 500px;
+    
+  }
+}
+
+.ui.text.size-s {
+  font-size: 20px;
+  font-weight: 500;
+  @media screen and (max-width:500px) {
+    font-size: 10px;
+    line-height: 1.5;
+    margin-left: 250px;
+    font-weight: 1000;
+    padding: 120px;
+    margin-bottom: 90px;
+  }
+}
+
+.ui.text {
+  color: var(--white_A700);
+  color: var(--black_900);
+  font-family: Poppins;
+}
+
+/*-------------------------------------
+  3. Heading CSS
+--------------------------------------*/
+.ui.heading.size-3xl {
+  font-size: 55px;
+  font-weight: 700;
+ 
+}
+
+.ui.heading.size-2xl {
+  font-size: 50px;
+  font-weight: 700;
+ 
+}
+
+.ui.heading.size-xl {
+  font-size: 24px;
+  font-weight: 700;
+  @media only screen and (max-width: 1050px) {
+    font-size: 22px;
+  }
+  
+}
+
+.ui.heading.size-5xl {
+  font-size: 68px;
+  font-weight: 700;
+ 
+}
+
+.ui.heading.size-4xl {
+  font-size: 65px;
+  font-weight: 700;
+  @media only screen and (max-width: 1050px) {
+    font-size: 48px;
+  }
+}
+
+.ui.heading.size-s {
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.ui.heading.size-md {
+  font-size: 20px;
+  font-weight: 700;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.ui.heading.size-xs {
+  font-size: 15px;
+  font-weight: 700;
+  @media only screen and (max-width: 500px) {
+    font-size: 15px;
+    color: black;
+  }
+}
+
+.ui.heading.size-lg {
+  font-size: 23px;
+  font-weight: 700;
+  @media only screen and (max-width: 1050px) {
+    font-size: 21px;
+  }
+}
+
+.ui.heading {
+  color: var(--white_A700);
+  font-family: Mukta;
+}
+
+@media screen and (max-width: 500px) {
+  .ui.heading.size-md{
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 500px){
+  .ui.heading.size-2xl{
+    margin-left: 250px;
+    font-size: 25px;
+    margin-bottom: 200px;
+    line-height: 1.5;
+  }
+}
+
+
